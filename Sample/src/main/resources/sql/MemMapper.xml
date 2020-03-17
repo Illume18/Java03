@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="member"><!-- mapper 태그 안에 원하는 sql 넣음 -->
+<!-- mem 테이브렝 있는 모든 레코드 검색해서 dto객체에 저장 -->
+
+<!-- insert/update/delete/selectOne -->
+<insert id="add" parameterType="spring.Mem.MemDto">
+	insert into mem value(#{memberid},#{password},#{name},#{email})
+</insert>
+
+
+</mapper>
